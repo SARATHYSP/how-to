@@ -16,7 +16,7 @@ Delete a database in postgresql
 
             $ dropdb mydb
 
-Know psql
+To Know psql
 
             $ psql --help # shows all commands available
 
@@ -75,7 +75,8 @@ Create Joins Between The Tables
              SELECT * FROM weather LEFT OUTER JOIN cities ON (weather.city = cities.name);
 
 Updating A Table
-             UPDATE weather SET temp_hi = temp_hi - 2,  temp_lo = temp_lo - 2 WHERE date > '1994-11-28';    
+             
+           UPDATE weather SET temp_hi = temp_hi - 2,  temp_lo = temp_lo - 2 WHERE date > '1994-11-28';    
 
 Deleting Rows From Table
 
