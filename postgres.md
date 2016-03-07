@@ -75,7 +75,7 @@ Create Joins Between The Tables
              SELECT * FROM weather LEFT OUTER JOIN cities ON (weather.city = cities.name);
 
 Updating A Table
-             
+
            UPDATE weather SET temp_hi = temp_hi - 2,  temp_lo = temp_lo - 2 WHERE date > '1994-11-28';    
 
 Deleting Rows From Table
@@ -120,3 +120,9 @@ Table Inheritance
 Eixt PostgreSQL
 
               \q
+
+Restart PostgreSQL
+
+               sudo service postgresql restart
+               If you make any changes in the database don't forget to restart
+               
